@@ -18,6 +18,10 @@
         <link rel="stylesheet" href="//code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.14.2/codemirror.css" media="screen" title="no title" charset="utf-8">
         <script src="/js/commons.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://cdn.ravenjs.com/3.8.1/raven.min.js"></script>
+        <script type="text/javascript">
+          Raven.config('https://32febef98a3140ceb21ad35138178163@sentry.io/118721').install();
+        </script>
         <script src="/js/room.bundle.min.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body ng-controller="RoomCtrl" ng-class="{'mouse-move': mouseMove}">

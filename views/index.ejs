@@ -19,6 +19,10 @@
           ga('send', 'pageview');
 
         </script>
+        <script src="https://cdn.ravenjs.com/3.8.1/raven.min.js"></script>
+        <script type="text/javascript">
+          Raven.config('https://32febef98a3140ceb21ad35138178163@sentry.io/118721').install();
+        </script>
     </head>
     <body ng-controller="MainCtrl">
         <div id="wrapper">

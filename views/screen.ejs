@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="/css/screen.css" media="screen" title="no title" charset="utf-8">
         <script src="//tbdev.tokbox.com/webrtc/v2/js/opentok.js" type="text/javascript" charset="utf-8"></script>
         <script src="/js/commons.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://cdn.ravenjs.com/3.8.1/raven.min.js"></script>
+        <script type="text/javascript">
+          Raven.config('https://32febef98a3140ceb21ad35138178163@sentry.io/118721').install();
+        </script>
         <script src="/js/screen.bundle.min.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript">
           angular.module('opentok-meet').value({
