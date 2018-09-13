@@ -73,6 +73,7 @@ glob.sync('./plugins/**/*.js').forEach((file) => {
 });
 
 app.use(serveStatic(`${__dirname}/safe-meet-frontend/dist`));
+
 // default handler...
 const defaultContent = fs.readFileSync('./safe-meet-frontend/dist/index.html', 'utf8');
 app.use((req, res) => {

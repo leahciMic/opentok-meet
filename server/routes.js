@@ -76,7 +76,8 @@ module.exports = (app, config, redis, ot, redirectSSL) => {
     res.render('index.ejs');
   });
 
-  app.post('/api/imageSafety', (req, res) => {
+  app.post('/imageSafety', (req, res) => {
+    console.log('blah');
     if (!req.files || !req.files.media || !req.files.media.path) {
       res.status('500').send('Didn\'t get expected media file');
     }
